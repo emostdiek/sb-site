@@ -4,6 +4,7 @@
 
 <h2>bazaar track er</h2>
 <button type="button" onclick="filterEnch()">filter enchantments cause theyre annoying and usually terrible trades</button><button type="button" onclick="sort('margin%')">margin %</button><button type="button" onclick="sort('marginRaw')">margin raw</button>
+<p id="smile"></p>
 <p id="demo"></p>
 <script>
     const url = "https://api.hypixel.net/skyblock/bazaar";
@@ -1190,7 +1191,8 @@
                 str += ':<br>&emsp;margin%: '+((data.products[idList[i]].quick_status.buyPrice-data.products[idList[i]].quick_status.sellPrice)/data.products[idList[i]].quick_status.sellPrice).toFixed(1);
                 
             }
-            document.getElementById("demo").innerHTML = str;
+        document.getElementById("demo").innerHTML = str;
+        document.getElementById("smile").innerHTML = "(for smile) hyper coins per bit: " + ((data.products.HYPER_CATALYST.quick_status.buyPrice-data.products.CATALYST.quick_status.sellPrice)*8/300).toFixed(1);
     }
 </script>
 
