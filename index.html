@@ -1129,6 +1129,7 @@
             }
             document.getElementById("demo").innerHTML = stringy;
             document.getElementById("smile").innerHTML = "(for smile) hyper coins per bit: " + ((data.products.HYPER_CATALYST.quick_status.buyPrice-data.products.CATALYST.quick_status.sellPrice)*8/300).toFixed(1);
+            document.getElementById("smile").innerHTML = "(for smile) profit per cookie: " + (data.products.BOOSTER_COOKIE.quick_status.sellPrice - ((data.products.HYPER_CATALYST.quick_status.buyPrice-data.products.CATALYST.quick_status.sellPrice)*8/300)*8640*(0-1)).toFixed(1);
         })
     }
     updateData();
