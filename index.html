@@ -1134,11 +1134,11 @@
             document.getElementById("smile").innerHTML = "(for smile) hyper coins per bit: " + ((data.products.HYPER_CATALYST.quick_status.buyPrice-data.products.CATALYST.quick_status.sellPrice)*8/300).toFixed(1);
             document.getElementById("cookie").innerHTML = "profit per cookie: " + (((data.products.HYPER_CATALYST.quick_status.buyPrice-data.products.CATALYST.quick_status.sellPrice)*10973*8/300) - data.products.BOOSTER_COOKIE.quick_status.sellPrice).toFixed(1);
             document.getElementById("cookie2").innerHTML = "profit per cookie (frag):" + (((data.products.HYPER_CATALYST.quick_status.buyPrice-data.products.CATALYST.quick_status.sellPrice)*10973*8/300) - data.products.CRYSTAL_FRAGMENT.quick_status.sellPrice).toFixed(1);
-        })
-    }
     console.log(data.products.HYPER_CATALYST.quick_status.buyPrice);
     console.log(data.products.CATALYST.quick_status.sellPrice);
     console.log(data.products.CRYSTAL_FRAGMENT.quick_status.sellPrice);
+        })
+    }
     updateData();
     function filterEnch(){
         for(i=0;i<idList.length;i++){
@@ -1206,5 +1206,6 @@
 
 </body>
 </html> 
+
 
 
